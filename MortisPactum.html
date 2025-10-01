@@ -46,6 +46,7 @@ a,a,0,0,0,0,a,0,0,a,0,0,0,0,a,c
 a,a,0,0,0,0,a,0,0,a,0,d,0,0,a,a
 a,c,a,c,a,c,a,0,0,a,c,a,a,a,a,a
 a,a,a,a,a,c,c,0,0,c,c,a,a,c,a,a
+NAME Inicio
 ITM 1 5,13
 ITM 2 13,4
 EXT 4,11 0 4,9 DLG spu
@@ -155,25 +156,6 @@ TIL f
 4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4
 NAME barras com chave
 WAL true
-COL 1
-
-TIL g
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 COL 1
 
 SPR A
@@ -359,9 +341,12 @@ DLG spu
 {
   - {item "chave"} >= 1 ?
     {property locked false}A chave abre o portão!
+    {pg}???: {wvy}Eiii!!!{/wvy}
+    {pg}???: Você aí! Cavaleiro! Me ajuda!
+    {rbw}Novo objetivo{/rbw}: Encontre a chave para libertar a prisioneira.
   - else ?
     {property locked true}O portão está trancado...
-}
+} 
 """
 NAME locked exit 1
 
@@ -371,6 +356,15 @@ NAME morteSemFoice dialog
 
 DLG spw
  {shk}EIIII!{/shk}
+
+DLG spx
+"""
+{wvy}Teste{/wvy}{sequence
+  - =asdhasio
+  - ffsd
+}{pg}
+"""
+NAME testeMorte
 
 VAR HP
 100
