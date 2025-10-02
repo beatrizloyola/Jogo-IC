@@ -55,7 +55,6 @@ a,c,a,c,a,c,a,0,0,a,c,a,a,a,a,a
 a,a,a,a,a,c,c,0,0,c,c,a,a,c,a,a
 NAME room 0
 ITM 1 5,13
-ITM 2 13,4
 EXT 4,11 0 4,9 DLG spu
 EXT 7,15 1 7,0
 EXT 2,7 4 2,7 FX fade_w DLG spz
@@ -104,8 +103,8 @@ ROOM 2
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 ITM 3 11,6
-EXT 15,8 3 0,8
 EXT 15,7 3 0,7
+EXT 15,8 3 0,8
 PAL 0
 
 ROOM 3
@@ -125,17 +124,39 @@ a,0,0,0,0,0,0,0,0,0,0,0,0,0,0,a
 a,0,0,0,0,0,0,0,0,0,0,0,0,0,0,c
 a,0,0,0,0,0,0,0,0,0,0,0,0,0,0,a
 a,a,c,a,a,c,a,a,c,a,a,a,c,a,a,a
-NAME room 1 sem esqueleto1
-EXT 7,0 0 7,15 FX slide_u
-EXT 8,0 0 8,15 FX slide_u
-EXT 12,7 1 15,7 DLG spy
-EXT 15,7 1 12,7
-EXT 12,8 1 15,8 DLG spy
-EXT 0,8 2 15,8
+NAME room 1 sem esqueletos
 EXT 0,7 2 15,7
+EXT 0,8 2 15,8
+EXT 8,0 5 8,15
+EXT 7,0 5 7,15
+EXT 8,0 6 8,15
+EXT 7,0 6 7,15
 PAL 0
 
-ROOM 4
+ROOM 5
+a,c,a,a,a,a,c,a,a,a,a,a,a,a,c,a
+a,a,a,a,a,a,a,a,c,a,a,a,a,a,a,a
+a,c,0,0,0,a,0,0,0,0,a,0,0,0,c,a
+c,a,0,0,0,a,0,0,0,0,a,0,0,0,a,c
+a,a,0,0,0,a,0,d,0,0,a,0,0,0,a,a
+a,a,0,m,0,a,0,0,0,0,a,0,0,0,a,a
+c,a,f,e,e,a,e,e,f,e,a,e,e,f,a,c
+c,c,0,0,0,0,0,0,0,0,0,0,0,0,c,a
+a,c,0,0,0,0,0,0,0,0,0,0,0,0,a,a
+a,c,0,0,0,0,0,0,0,0,0,0,0,0,a,a
+a,a,e,e,f,e,a,0,0,a,e,f,e,e,a,c
+a,a,0,0,0,0,a,0,0,a,0,0,0,0,a,a
+a,a,0,0,0,0,a,0,0,a,0,0,0,0,a,c
+a,a,0,0,0,0,a,0,0,a,0,d,0,0,a,a
+a,c,a,c,a,c,a,0,0,a,c,a,a,a,a,a
+a,a,a,a,a,c,c,0,0,c,c,a,a,c,a,a
+NAME room 0 dps dos esqueletos
+EXT 8,15 3 8,0
+EXT 7,15 3 7,0
+EXT 2,7 6 2,7 FX fade_w DLG spz
+PAL 0
+
+ROOM 6
 a,c,a,a,a,a,c,a,a,a,a,a,a,a,c,a
 a,a,a,a,a,a,a,a,c,a,a,a,a,a,a,a
 a,c,0,0,0,a,0,0,0,0,a,0,0,0,c,a
@@ -152,10 +173,9 @@ a,a,0,0,0,0,a,0,0,a,0,0,0,0,a,c
 a,a,0,0,0,0,a,0,0,a,0,d,0,0,a,a
 a,c,a,c,a,c,a,0,0,a,c,a,a,a,a,a
 a,a,a,a,a,c,c,0,0,c,c,a,a,c,a,a
-NAME room 0 dps da chave
-ITM 2 13,4
-EXT 4,11 0 4,9 DLG spu
-EXT 7,15 1 7,0 FX slide_d
+NAME room 0 mors solta
+EXT 8,15 3 8,0
+EXT 7,15 3 7,0
 PAL 0
 
 TIL a
@@ -390,20 +410,20 @@ TIL m
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,3,3,3,3,3,3,0,0,0,0,0
-0,0,0,0,3,3,0,0,0,0,3,3,0,0,0,0
-0,0,0,3,3,0,0,0,0,0,0,3,0,0,0,0
-0,0,0,3,3,0,3,3,0,3,3,0,0,0,0,0
-0,0,3,3,3,0,3,3,0,3,3,0,0,0,0,0
-0,0,3,3,3,0,0,0,0,0,0,3,0,0,0,0
-0,0,3,3,3,3,3,0,3,3,0,3,0,0,0,0
-0,0,3,0,3,3,3,3,3,3,3,3,0,0,0,0
-0,0,0,0,3,3,3,3,3,3,3,0,0,0,0,0
-0,0,0,3,3,3,3,3,3,3,3,3,0,0,0,0
-0,0,0,3,3,3,3,3,3,3,3,3,0,0,0,0
-0,0,0,0,0,3,3,3,3,3,0,0,0,0,0,0
-0,0,0,0,0,3,3,0,3,3,0,0,0,0,0,0
-NAME mors.png
+0,0,0,0,0,0,3,3,3,3,3,3,0,0,0,0
+0,0,0,0,0,3,3,0,0,0,0,3,3,0,0,0
+0,0,0,0,3,3,0,0,0,0,0,0,3,0,0,0
+0,0,0,0,3,3,0,3,3,0,3,3,0,0,0,0
+0,0,0,3,3,3,0,3,3,0,3,3,0,0,0,0
+0,0,0,3,3,3,0,0,0,0,0,0,3,0,0,0
+0,0,0,3,3,3,3,3,0,3,3,0,3,0,0,0
+0,0,0,3,0,3,3,3,3,3,3,3,3,0,0,0
+0,0,0,0,0,3,3,3,3,3,3,3,0,0,0,0
+0,0,0,0,3,3,3,3,3,3,3,3,3,0,0,0
+0,0,0,0,3,3,3,3,3,3,3,3,3,0,0,0
+0,0,0,0,0,0,3,3,3,3,3,0,0,0,0,0
+0,0,0,0,0,0,3,3,0,3,3,0,0,0,0,0
+NAME mors tile
 COL 1
 
 SPR A
@@ -440,7 +460,7 @@ SPR A
 0,0,0,1,1,0,0,1,1,1,0,0,1,0,0,0
 0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0
 0,0,0,0,0,0,1,1,0,1,1,0,0,0,0,0
-POS 3 5,5
+POS 0 2,13
 COL 2
 
 SPR a
@@ -524,9 +544,9 @@ SPR e
 0,0,0,0,3,3,3,3,3,3,3,1,1,0,0,0
 0,0,0,0,0,0,3,3,3,3,3,0,0,0,0,0
 0,0,0,0,0,0,3,3,0,3,3,0,0,0,0,0
-NAME morteSemFoice
+NAME mors sprite
 DLG spv
-POS 4 3,7
+POS 6 3,7
 COL 2
 
 SPR f
@@ -654,10 +674,10 @@ DLG spu
 """
 {
   - {item "chave"} >= 1 ?
-    {property locked false}A chave abre o portão!
+    {property locked false}A chave abriu o portão!
     {pg}???: {wvy}Eiii!!!{/wvy}
     {pg}???: Você aí! Cavaleiro! Me ajuda!
-    {rbw}Novo objetivo{/rbw}: Encontre a chave para libertar a prisioneira.
+    {rbw}Novo objetivo:{/rbw} Encontre a chave para libertar a prisioneira.
   - else ?
     {property locked true}O portão está trancado...
 } 
@@ -665,7 +685,7 @@ DLG spu
 NAME locked exit 1
 
 DLG spv
-
+???: Ufa! Parecia que eu ia ficar ali pra sempre...{pg}???: Valeu, cavaleiro. Eu sou a {clr 1}Mors{/clr}, prazer.{pg}Mors: Só temos um probleminha... não sei onde colocaram minha foice.{pg}{rbw}Novo objetivo:{/rbw} Encontre a foice de Mors.
 NAME morteSemFoice dialog
 
 DLG spy
@@ -683,9 +703,9 @@ DLG spz
 """
 {
   - {item "chaveMors"} >= 1 ?
-    {property locked false}A chave abriu a porta da prisioneira!
+    {property locked false}A chave abriu a porta da prisioneira!{exit "6" 2 7 "fade_w"}
   - else ?
-    {property locked true}Acho que vi uns esqueletos com a chave da minha cela...
+    {property locked true}???: Acho que vi uns esqueletos com a chave da minha cela...
 }
 """
 NAME exit narration 1
@@ -696,30 +716,30 @@ NAME item 3 dialog
 
 DLG sq1
 """
-Você ataca o {wvy}esqueleto{wvy}{pg}{shuffle
-  - Você erra
-  - Você dá 4 pontos de dano{esqueleto1 = esqueleto1 - 40}
-  - Você dá 10 pontos de dano{esqueleto1 = esqueleto1 - 100}
-  - Crítico! Você dá 12 pontos de dano{esqueleto1 = esqueleto1 - 120}
+Você ataca os {wvy}esqueletos.{wvy}{pg}{shuffle
+  - Você erra.
+  - Você dá {clr 1}4 pontos{/clr} de dano.{esqueleto1 = esqueleto1 - 40}
+  - Você dá {clr 1}10 pontos {/clr}de dano.{esqueleto1 = esqueleto1 - 100}
+  - Crítico! Você dá {clr 1}12 pontos{/clr} de dano.{esqueleto1 = esqueleto1 - 120}
 }{
   - {esqueleto1} < 1 ?
-    {pg}Você matou o {wvy}esqueleto{wvy}!{exit "3" 2 7 "fade_w"}
+    {pg}Você matou os {wvy}esqueletos!{wvy}{exit "3" 2 7 "fade_w"}
   - else ?
-    {pg}O {wvy}esqueleto{wvy} te ataca{pg}{shuffle
-      - E erra
-      - E dá 4 pontos de dano{hp = hp - 4}
-      - E dá 7 pontos de dano{hp = hp - 7}
-      - E dá 9 pontos de dano{hp = hp - 9}
+    {pg}Os {wvy}esqueletos{wvy} te atacam...{pg}{shuffle
+      - E erram.
+      - E te dão {clr 1}4 pontos{/clr} de dano!{hp = hp - 4}
+      - E te dão {clr 1}7 pontos{/clr} de dano!{hp = hp - 7}
+      - E te dão {clr 1}9 pontos{/clr} de dano!{hp = hp - 9}
     }{
       - {hp} < 1 ?
-        {pg}Você morreu.{pg}{end}Boa sorte na próxima.
+        {pg}Você morreu...{pg}{end}Boa sorte na próxima.
       - else ?
         {pg}Você tem {say hp} HP restantes.
-        O {wvy}esqueleto{wvy} tem {say esqueleto1} HP restantes.
+        Os {wvy}esqueletos{wvy} têm {say esqueleto1} HP restantes.
     }
 }
 """
-NAME esqueleto1 dialogue
+NAME esqueleto dialogue
 
 VAR morsLivre
 false
@@ -53254,7 +53274,7 @@ function bitsyLog(message, category) {
 }
 
 /* GLOBALS */
-var tilesize = 16;
+var tilesize = 8;
 var mapsize = 16;
 var width = mapsize * tilesize;
 var height = mapsize * tilesize;
