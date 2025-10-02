@@ -718,9 +718,9 @@ DLG sq1
 """
 Você ataca os {wvy}esqueletos.{wvy}{pg}{shuffle
   - Você erra.
-  - Você dá {clr 1}4 pontos{/clr} de dano.{esqueleto1 = esqueleto1 - 40}
-  - Você dá {clr 1}10 pontos {/clr}de dano.{esqueleto1 = esqueleto1 - 100}
-  - Crítico! Você dá {clr 1}12 pontos{/clr} de dano.{esqueleto1 = esqueleto1 - 120}
+  - Você dá {clr 1}4 pontos{/clr} de dano.{esqueleto1 = esqueleto1 - 4}
+  - Você dá {clr 1}10 pontos {/clr}de dano.{esqueleto1 = esqueleto1 - 10}
+  - Crítico! Você dá {clr 1}12 pontos{/clr} de dano.{esqueleto1 = esqueleto1 - 12}
 }{
   - {esqueleto1} < 1 ?
     {pg}Você matou os {wvy}esqueletos!{wvy}{exit "3" 2 7 "fade_w"}
@@ -53274,7 +53274,7 @@ function bitsyLog(message, category) {
 }
 
 /* GLOBALS */
-var tilesize = 8;
+var tilesize = 16;
 var mapsize = 16;
 var width = mapsize * tilesize;
 var height = mapsize * tilesize;
