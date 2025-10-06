@@ -90,10 +90,10 @@ a,0,0,0,0,0,0,0,0,0,0,0,0,0,0,a
 a,0,0,0,0,0,0,0,0,0,0,0,0,0,0,c
 a,0,0,0,0,0,0,0,0,0,0,0,0,0,0,a
 a,a,c,a,a,c,a,a,a,a,a,a,c,a,a,a
-EXT 7,0 0 7,15
-EXT 13,7 1 13,7 DLG spy
-EXT 13,8 1 13,8 DLG spy
-EXT 8,0 0 8,15
+EXT 13,8 1 14,8 DLG spy
+EXT 13,7 1 14,7 DLG spy
+EXT 14,7 1 13,7
+EXT 14,8 1 13,8
 PAL 0
 
 ROOM 2
@@ -144,8 +144,10 @@ EXT 8,0 6 8,15
 EXT 7,0 6 7,15
 EXT 15,7 8 0,7
 EXT 15,8 8 0,8
-EXT 13,7 3 13,7 DLG spy
-EXT 13,8 3 13,8 DLG spy
+EXT 13,7 3 14,7 DLG spy
+EXT 14,7 3 13,7
+EXT 13,8 3 14,8 DLG spy
+EXT 14,8 3 13,8
 PAL 0
 
 ROOM 5
@@ -53123,6 +53125,7 @@ CHAR 65533
 00000000
 </script>
 </script>
+</script>
 
 <style>
 html {
@@ -53778,12 +53781,12 @@ function bitsyLog(message, category) {
 }
 
 /* GLOBALS */
-var tilesize = 8;
+var tilesize = 16;
 var mapsize = 16;
 var width = mapsize * tilesize;
 var height = mapsize * tilesize;
 var scale = 4;
-var textScale = 2;
+var textScale = 4;
 
 /* SYSTEM */
 var updateInterval = null;
@@ -64815,6 +64818,7 @@ CHAR 9835
 011011
 011000
 000000
+</script>
 </script>
 </script>
 
