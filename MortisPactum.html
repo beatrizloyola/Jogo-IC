@@ -575,6 +575,7 @@ a,0,a,a,0,0,a,a,a,a,0,a,a,a,0,a
 a,0,0,0,0,0,0,0,0,0,0,0,0,0,0,a
 a,a,a,a,a,a,c,a,a,a,a,a,a,a,a,a
 NAME room boss 2 morto
+ITM 9 8,8
 PAL 0
 
 ROOM n
@@ -1232,7 +1233,7 @@ SPR A
 0,0,0,1,1,0,0,1,1,1,0,0,1,0,0,0
 0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0
 0,0,0,0,0,0,1,1,0,1,1,0,0,0,0,0
-POS a 7,6
+POS m 9,7
 COL 2
 
 SPR a
@@ -1825,6 +1826,27 @@ NAME fragmento 1
 DLG sqh
 COL 2
 
+ITM 9
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,15,15,15,0,0,0,0,0,0
+0,0,0,0,0,0,15,24,24,24,15,0,0,0,0,0
+0,0,0,0,0,15,24,24,24,24,24,15,0,0,0,0
+0,0,0,0,0,15,24,24,24,24,24,15,0,0,0,0
+0,0,0,0,0,15,24,24,2,24,24,15,0,0,0,0
+0,0,0,0,0,15,24,24,24,2,24,15,0,0,0,0
+0,0,0,0,0,15,24,24,24,24,24,15,0,0,0,0
+0,0,0,0,0,0,15,24,24,24,15,0,0,0,0,0
+0,0,0,0,0,0,0,15,15,15,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,15,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,15,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,15,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,15,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+NAME fragmento 2
+DLG sqi
+COL 2
+
 DLG SPR_0
 ...
 
@@ -2164,6 +2186,18 @@ Limpei o sangue na bandeira e me ergui.
 {exit "a" 3 3 "fade_w"}
 """
 NAME fragmento 1 dialog
+
+DLG sqi
+"""
+{exit "n" 7 2 "fade_w"}O estertor da morte do fantasma vibra em meu peito, atravessando o silêncio da sala.
+Outra {clr 24}lembrança{/clr}. Eu já ouvi aquele som antes.
+Em inocentes gastando seu último sopro clamando por misericórdia, presos para morrer em casas que incendiei.
+Deixei-os arder. Segui adiante.
+{clr 24}Na guerra não havia espaço para arrependimento.{/clr}
+
+{end}Fim da demo. Obrigado por jogar! {rbw}<3{/rbw}
+"""
+NAME fragmento 2 dialog
 
 VAR esqueleto1
 24
