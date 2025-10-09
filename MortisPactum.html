@@ -68,6 +68,7 @@ a,c,a,c,a,c,a,0,0,a,c,a,a,a,a,a
 a,a,a,a,a,c,c,0,0,c,c,a,a,c,a,a
 NAME room 0
 ITM 1 5,13
+ITM 8 3,11
 EXT 4,11 0 4,9 DLG spu
 EXT 7,15 1 7,0
 EXT 2,7 4 2,7 FX fade_w DLG spz
@@ -285,8 +286,9 @@ a,0,0,0,0,0,0,0,0,0,0,0,0,0,0,c
 a,c,c,c,a,a,a,a,a,a,a,c,a,c,c,a
 NAME room boss morto
 ITM 2 10,8
-EXT 0,7 b 15,7
-EXT 0,8 b 15,8
+ITM 8 3,3
+EXT 0,7 b 15,7 DLG sq5
+EXT 0,8 b 15,8 DLG sq5
 PAL 0
 
 ROOM b
@@ -308,10 +310,6 @@ a,a,a,a,a,a,c,a,a,c,a,a,a,a,c,a
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 NAME room 3 pós foice
 EXT 7,8 b 7,8 FX fade_w DLG sq2
-EXT 15,7 a 0,7 DLG sq5
-EXT 15,8 a 0,8 DLG sq5
-EXT 15,8 a 0,8
-EXT 15,7 a 0,7
 PAL 0
 
 ROOM c
@@ -577,6 +575,26 @@ a,0,a,a,0,0,a,a,a,a,0,a,a,a,0,a
 a,0,0,0,0,0,0,0,0,0,0,0,0,0,0,a
 a,a,a,a,a,a,c,a,a,a,a,a,a,a,a,a
 NAME room boss 2 morto
+PAL 0
+
+ROOM n
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+NAME room fragmentos
 PAL 0
 
 TIL 10
@@ -1214,7 +1232,7 @@ SPR A
 0,0,0,1,1,0,0,1,1,1,0,0,1,0,0,0
 0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0
 0,0,0,0,0,0,1,1,0,1,1,0,0,0,0,0
-POS 0 2,13
+POS a 7,6
 COL 2
 
 SPR a
@@ -1786,6 +1804,27 @@ NAME cruz
 DLG sqg
 COL 2
 
+ITM 8
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,15,15,15,0,0,0,0,0,0
+0,0,0,0,0,0,15,24,24,24,15,0,0,0,0,0
+0,0,0,0,0,15,24,24,24,24,24,15,0,0,0,0
+0,0,0,0,0,15,24,24,24,24,24,15,0,0,0,0
+0,0,0,0,0,15,24,24,2,24,24,15,0,0,0,0
+0,0,0,0,0,15,24,24,24,2,24,15,0,0,0,0
+0,0,0,0,0,15,24,24,24,24,24,15,0,0,0,0
+0,0,0,0,0,0,15,24,24,24,15,0,0,0,0,0
+0,0,0,0,0,0,0,15,15,15,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,15,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,15,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,15,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,15,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+NAME fragmento 1
+DLG sqh
+COL 2
+
 DLG SPR_0
 ...
 
@@ -1894,7 +1933,8 @@ Você ataca {wvy}Ghorr, o aniquilador{wvy}{pg}{shuffle
   - Crítico! Você dá {clr 1}15 pontos{/clr} de dano.{placeholder_boss1 = placeholder_boss1 - 15}
 }{
   - {placeholder_boss1} < 1 ?
-    {pg}Você matou {wvy}Ghorr, o aniquilador{wvy}{exit "a" 8 8 "fade_w"}
+    {pg}Você matou {wvy}Ghorr, o aniquilador{wvy}
+    {exit "a" 8 8 "fade_w"}
   - else ?
     {pg}{wvy}Ghorr{wvy} te ataca...{pg}{shuffle
       - E te dá {clr 1}6 pontos{/clr} de dano!{hp = hp - 6}
@@ -1915,8 +1955,15 @@ Você ataca {wvy}Ghorr, o aniquilador{wvy}{pg}{shuffle
 NAME placeholder_boss1 dialog
 
 DLG sq5
-{placeholder_boss1 = 75}
-NAME regen boss hp
+"""
+{
+  - {item "foice"} >= 1 ?
+    {property locked false}
+  - else ?
+    {property locked true}Sinto que estou esquecendo alguma coisa...
+} 
+"""
+NAME saida boss 1
 
 DLG sq6
 {clr 1}Mors{/clr}:Vejo que conseguiu recuperar minha foice. Sendo sincera eu achei que você não ia conseguir derrotar aquele esqueleto.{pg}{exit "c" 12 9}Você entrega a foice para {clr 1}Mors{/clr}...{pg}{clr 1}Mors{/clr}:Obrigada, Cavaleiro. De verdade.{pg}{clr 1}Mors{/clr}:Aceite isso como agradecimento...{pg}{clr 1}Mors{/clr} canaliza {clr 8}Magia{/clr} em sua foice e a aplica em você.{pg}{ava "j"}{clr 1}Mors{/clr}: Agora sim, isso deve te deixar um pouco mais forte.{pg}{clr 1}Mors{/clr}:Agora que estamos prontos, vamos dar um jeito de sair daqui. Parece ter um caminho logo ali{pg}Mors brande sua foice e revela uma passagem escondida.{pg}{exit "d" 12 9 "fade_w"}{ava "j"}{clr 1}Mors{/clr}:Pronto, podemos seguir. Dessa vez eu vou poder estar te acompanhando e agir caso necessário.{pg}{exit "f" 12 9}{ava "k"}{clr 1}Mors{/clr} se uniu à sua aventura.
@@ -2097,6 +2144,26 @@ NAME ataque boss 2
 DLG sqg
 Sua energia espiritual foi recuperada em 12 pontos.{hp_evo = hp_evo + 12}
 NAME cruz dialog
+
+DLG sqh
+"""
+{exit "n" 7 2 "fade_w"}O som de ossos se partindo ecoa em meus ouvidos e a {clr 24}lembrança{/clr} da batalha volta em um segundo.
+
+Eu estava de joelhos, prostrado diante de uma bandeira rasgada.
+
+O cheiro do sangue que manchava minhas mãos é inconfundível.
+
+A lâmina da minha espada estava fria como os corpos sem vida ao meu redor.
+
+Outro soldado apertou meu ombro e disse que precisávamos seguir.
+
+Limpei o sangue na bandeira e me ergui.
+
+{clr 24}Causaria quantas mortes fossem necessárias.{/clr}
+
+{exit "a" 3 3 "fade_w"}
+"""
+NAME fragmento 1 dialog
 
 VAR esqueleto1
 24
@@ -54002,7 +54069,7 @@ body {
 	margin:0px;
 	padding:0px;
 	overflow:hidden;
-	background:#000000;
+	background:#ffffff;
 }
 
 #game {
