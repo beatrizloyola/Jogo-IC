@@ -307,8 +307,6 @@ a,a,a,a,a,a,c,a,a,c,a,a,a,a,c,a
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 NAME room 3 pós foice
-EXT 0,7 3 15,7
-EXT 0,8 3 15,8
 EXT 7,8 b 7,8 FX fade_w DLG sq2
 EXT 15,7 a 0,7 DLG sq5
 EXT 15,8 a 0,8 DLG sq5
@@ -334,8 +332,6 @@ a,a,a,a,a,a,c,a,a,c,a,a,a,a,c,a
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 NAME room 3 pós foice 2
-EXT 0,7 3 15,7
-EXT 0,8 3 15,8
 EXT 7,8 c 7,8 FX fade_w DLG sq2
 EXT 15,7 a 0,7 DLG sq5
 EXT 15,8 a 0,8 DLG sq5
@@ -361,8 +357,6 @@ a,a,a,a,a,a,c,0,0,c,a,a,a,a,c,a
 0,0,0,0,0,0,a,0,0,a,0,0,0,0,0,0
 0,0,0,0,0,0,a,0,0,a,0,0,0,0,0,0
 NAME room 3 pós foice 3
-EXT 0,7 3 15,7
-EXT 0,8 3 15,8
 EXT 7,8 d 7,8 FX fade_w DLG sq2
 EXT 15,7 a 0,7 DLG sq5
 EXT 15,8 a 0,8 DLG sq5
@@ -415,8 +409,6 @@ a,a,a,a,a,a,c,0,0,c,a,a,a,a,c,a
 0,0,0,0,0,0,a,0,0,a,0,0,0,0,0,0
 0,0,0,0,0,0,a,0,0,a,0,0,0,0,0,0
 NAME room 3 pós foice 4
-EXT 0,7 3 15,7
-EXT 0,8 3 15,8
 EXT 7,8 f 7,8 FX fade_w DLG sq2
 EXT 15,7 a 0,7 DLG sq5
 EXT 15,8 a 0,8 DLG sq5
@@ -565,6 +557,26 @@ ITM 7 14,1
 EXT 1,6 l 1,6 DLG sqf
 EXT 3,14 l 3,14 DLG sqf
 EXT 12,7 l 12,7 DLG sqf
+PAL 0
+
+ROOM m
+a,a,a,a,a,a,a,a,a,a,0,0,a,a,a,a
+a,0,a,a,a,0,0,0,0,0,0,0,0,c,0,a
+a,0,0,0,0,0,a,a,a,a,a,a,a,a,0,a
+a,0,a,0,a,a,a,0,0,0,0,0,0,a,0,c
+a,0,a,0,a,0,0,0,a,0,a,0,0,a,0,a
+a,0,a,0,a,0,a,a,a,g,a,a,0,a,0,a
+c,0,0,0,a,0,a,0,0,0,0,a,0,a,0,a
+a,0,a,a,a,0,a,0,0,0,0,a,0,a,0,a
+a,0,0,0,a,a,c,0,0,0,0,a,0,0,0,a
+a,0,a,a,a,0,a,0,0,0,0,a,0,a,0,a
+a,0,0,0,a,0,a,a,a,c,g,a,0,a,0,a
+a,a,0,0,a,0,0,0,0,a,0,0,0,a,0,a
+a,0,0,a,a,0,0,0,0,a,0,0,0,a,0,a
+a,0,a,a,0,0,a,a,a,a,0,a,a,a,0,a
+a,0,0,0,0,0,0,0,0,0,0,0,0,0,0,a
+a,a,a,a,a,a,c,a,a,a,a,a,a,a,a,a
+NAME room boss 2 morto
 PAL 0
 
 TIL 10
@@ -1873,24 +1885,24 @@ DLG sq4
 """
 Você ataca {wvy}Ghorr, o aniquilador{wvy}{pg}{shuffle
   - Você erra.
-  - Você dá {clr 1}5 pontos{/clr} de dano.{placeholder_boss1 = placeholder_boss1 - 5}
+  - Você dá {clr 1}8 pontos{/clr} de dano.{placeholder_boss1 = placeholder_boss1 - 8}
   - Você dá {clr 1}10 pontos {/clr}de dano.{placeholder_boss1 = placeholder_boss1 - 10}
   - Você dá {clr 1}7 pontos {/clr}de dano.{placeholder_boss1 = placeholder_boss1 - 7}
   - Você dá {clr 1}8 pontos {/clr}de dano.{placeholder_boss1 = placeholder_boss1 - 8}
   - Você dá {clr 1}7 pontos {/clr}de dano.{placeholder_boss1 = placeholder_boss1 - 7}
-  - Você dá {clr 1}6 pontos {/clr}de dano.{placeholder_boss1 = placeholder_boss1 - 6}
+  - Você dá {clr 1}8 pontos {/clr}de dano.{placeholder_boss1 = placeholder_boss1 - 8}
   - Crítico! Você dá {clr 1}15 pontos{/clr} de dano.{placeholder_boss1 = placeholder_boss1 - 15}
 }{
   - {placeholder_boss1} < 1 ?
     {pg}Você matou {wvy}Ghorr, o aniquilador{wvy}{exit "a" 8 8 "fade_w"}
   - else ?
     {pg}{wvy}Ghorr{wvy} te ataca...{pg}{shuffle
+      - E te dá {clr 1}6 pontos{/clr} de dano!{hp = hp - 6}
       - E te dá {clr 1}8 pontos{/clr} de dano!{hp = hp - 8}
-      - E te dá {clr 1}8 pontos{/clr} de dano!{hp = hp - 8}
-      - E te dá {clr 1}7 pontos{/clr} de dano!{hp = hp - 10}
-      - E te dá {clr 1}6 pontos{/clr} de dano!{hp = hp - 7}
+      - E te dá {clr 1}7 pontos{/clr} de dano!{hp = hp - 7}
+      - E te dá {clr 1}6 pontos{/clr} de dano!{hp = hp - 6}
       - Crítico! Você recebeu {clr 1}10 pontos{/clr} de dano!{hp = hp - 10}
-      - E suga parte do seu espírito, recuperando {clr 1}6 pontos{/clr} de vida!{hp = hp - 6}{placeholder_boss1 = placeholder_boss1 + 6}
+      - E suga parte do seu espírito, recuperando {clr 1}4 pontos{/clr} de vida!{hp = hp - 4}{placeholder_boss1 = placeholder_boss1 + 4}
     }{
       - {hp} < 1 ?
         {pg}Você morreu...{pg}{end}Boa sorte na próxima.
@@ -2093,7 +2105,7 @@ VAR hp
 100
 
 VAR placeholder_boss1
-75
+70
 
 VAR upgrade
 1
@@ -54638,13 +54650,13 @@ function bitsyLog(message, category) {
 }
 
 /* GLOBALS */
-var tilesize = 16;
+var tilesize = 8;
 var mapsize = 16;
 var width = mapsize * tilesize;
 var height = mapsize * tilesize;
 var scale = 4;
 var scales = [];
-var textScale = 4;
+var textScale = 2;
 
 /* SYSTEM */
 var updateInterval = null;
